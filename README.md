@@ -1,148 +1,118 @@
-📖 Sobre o Projeto
+☁️ AWS EC2 Lab - Gerenciamento de Instâncias Amazon EC2
+AWS Nuvem DIO GitHub Status
 
-Este repositório foi desenvolvido como parte do desafio prático da DIO (Digital Innovation One) com foco em gerenciamento de instâncias Amazon EC2 na AWS.
+📖 Descrição
+Este repositório foi desenvolvido como parte do desafio prático da DIO (Digital Innovation One) com foco no gerenciamento de instâncias Amazon EC2 na AWS.
 
-O laboratório permitiu aplicar conceitos fundamentais de computação em nuvem, segurança, monitoramento e gerenciamento de infraestrutura utilizando serviços da AWS.
+O laboratório ajudou na criação, configuração, monitoramento e gerenciamento de uma instância EC2, além da utilização de recursos como Security Groups, EBS e CloudWatch.
 
-🎯 Objetivos
+🎯 Objetivos de Aprendizagem
+Aplicar conceitos de computação em nuvem.
+Criar e gerenciar instâncias EC2.
+Configure regras de acesso utilizando grupos de segurança.
+Uso de armazenamento persistente com Amazon EBS.
+Monitore recursos por meio do Amazon CloudWatch.
+Documentar processos técnicos utilizando GitHub.
+🏗️ Arquitetura do Laboratório
 
-✅ Criar instâncias EC2
-
-✅ Configurar Security Groups
-
-✅ Utilizar armazenamento EBS
-
-✅ Monitorar recursos com CloudWatch
-
-✅ Gerenciar ciclo de vida das instâncias
-
-✅ Documentar a experiência utilizando GitHub
-
-🏗️ Arquitetura Utilizada
-flowchart LR
-
-    User[👩‍💻 Usuário]
-
-    SG[🔒 Security Group]
-
-    EC2[🖥️ Amazon EC2]
-
-    EBS[(💾 Amazon EBS)]
-
-    CW[📊 CloudWatch]
-
-    User --> SG
-    SG --> EC2
-    EC2 --> EBS
-    EC2 --> CW
 ☁️ Serviços AWS Utilizados
-Serviço	Finalidade
-Amazon EC2	Criação da máquina virtual
-Amazon EBS	Armazenamento persistente
-IAM	Controle de acesso
-CloudWatch	Monitoramento
-Security Groups	Firewall virtual
-EC2 Instance Connect	Conexão com a instância
-🚀 Etapas Executadas
-1️⃣ Criação da Instância
-
+se	Descrição
+Amazon EC2	máquina virtual na
+Amazon EBS	†A
+AWS IAM	Gerenciamento de usuários e permissões
+CloudWatch	Monitoramento e metodologia
+Grupos de segurança	Controle de acesso à instância
+🚀 Etapas Realizadas
+1️⃣ Criação da Instância EC2
 Configurações utilizadas:
 
-Nome: Minha-Primeira-EC2
-Tipo: t2.micro
-Sistema Operacional: Amazon Linux 2023
+Nome da instância: AWS-EC2-LAB
+Sistema Operacional: Amazon Linux
+Tipo da Instância: t2.micro
 Região: us-west-2
-Volume: EBS padrão
-2️⃣ Configuração de Segurança
+Volume EBS
+2️⃣ Criação do Par de Chaves
+Configuração utilizada:
 
-Portas liberadas:
+Tipo: RSA
+Formato: .pem
+O par de chaves permite acesso seguro à instância via SSH.
 
-Porta	Protocolo	Finalidade
+3️⃣ Configuração do Grupo de Segurança
+Portas preparam:
+
+Porta	Protocolo	‐
 22	SSH	Acesso remoto
 80	HTTP	Aplicações Web
-443	HTTPS	Aplicações seguras
-3️⃣ Conexão com a Instância
+443	HTTPS	Aplicações Seguras
+4️⃣ Inicialização da Instância
+Durante a seguinte criação da instância foram executadas as etapas:
 
-Exemplo:
+✅ Inicializando interferências
 
-ssh -i chave.pem ec2-user@IP_PUBLICO
-4️⃣ Monitoramento
+✅ Criando grupos de segurança
 
-Monitoramento realizado através do Amazon CloudWatch:
+✅ Criando regras do grupo de segurança
 
-CPU Utilization
-Network In
-Network Out
-Status Checks
-EBS Metrics
-5️⃣ Gerenciamento do Ciclo de Vida
+✅ Iniciando
 
-Estados observados:
+5️⃣ Monitoramento
+Foi realizado acompanhamento através do Amazon CloudWatch:
 
-Pending
- ↓
-Running
- ↓
-Stopping
- ↓
-Stopped
- ↓
-Terminated
-📚 Conceitos Aprendidos
-Amazon EC2
+Utilização da CPU
+Rede em
+Saída de rede
+Verificações de status
+6️⃣ Gerenciamento da Instância
+Operações executadas:
 
-Serviço responsável pela criação de servidores virtuais sob demanda.
-
-Security Group
-
-Firewall virtual que controla o tráfego de entrada e saída.
-
-Amazon EBS
-
-Serviço de armazenamento persistente para instâncias EC2.
-
-CloudWatch
-
-Ferramenta de monitoramento e observabilidade da AWS.
-
-IAM
-
-Serviço utilizado para controle de identidade e permissões.
-
+Começar
+Parar
+Reinício
+Monitoramento
+Encerramento
 📷 Evidências
+As capturas de tela utilizadas neste laboratório estão armazenadas na pasta:
 
-Estrutura sugerida:
-
-AWS-EC2-LAB-MAIN/
+images/
+├── cloudwatch-metrics.png
+├── EBS.PNG
+├── ec2-running.png
+├── instaciaInterropida.PNG
+└── instance-connect.png
+📁 Estrutura do Repositório
+aws-ec2-lab/
 │
 ├── README.md
 │
 └── images/
-    ├── 01-ec2-running.png
-    ├── 02-instance-connect.png
-    ├── 03-cloudwatch-metrics.png
-    ├── 04-ebs.png
-    └── 05-instancia-interrompida.png
+    ├── cloudwatch-metrics.png
+    ├── EBS.PNG
+    ├── ec2-running.png
+    ├── instaciaInterropida.PNG
+    └── instance-connect.png
+📚 Conceitos Aprendidos
+Amazon EC2
+Serviço responsável pela criação de servidores virtuais sob demanda.
 
+Amazon EBS
+Serviço de armazenamento persistente associado às instâncias EC2.
 
+Grupos de segurança
+Firewall virtual utilizado para controlar o tráfego de entrada e saída.
 
+Amazon CloudWatch
+Serviço de monitoramento e observabilidade da AWS.
 
-
-
+EU SOU
+Serviço utilizado para gerenciamento de usuários, grupos e permissões.
 
 💡 Insights Obtidos
-
-🔹 A EC2 permite escalar infraestrutura rapidamente.
-
-🔹 Security Groups são essenciais para proteção dos recursos.
-
-🔹 O monitoramento contínuo ajuda a prevenir falhas.
-
-🔹 O gerenciamento correto dos recursos evita custos desnecessários.
-
-🔹 O CloudWatch fornece métricas importantes para tomada de decisão.
-
-
+A EC2 oferece flexibilidade para criação de ambientes sob demanda.
+Grupos de Segurança são fundamentais para a segurança da infraestrutura.
+O CloudWatch permite monitoramento detalhado dos recursos.
+O armazenamento EBS garante persistência dos dados.
+A documentação facilita futuras implementações e consultas.
 🛠️ Tecnologias Utilizadas
 Amazon EC2
 Amazon EBS
@@ -152,29 +122,21 @@ Git
 GitHub
 Markdown
 📈 Próximos Passos
-
-Implementar Auto Scaling
-
-Configurar Load Balancer
-
-Utilizar Elastic IP
-
-Integrar com S3
-
-Automatizar implantação com AWS CLI
-
-🔗 Referências
-AWS Documentation
-AWS Academy
-DIO Bootcamp AWS
-GitHub Docs
+IP Elástico
+Dimensionamento automático do Utilizar
+Integrar com Amazon S3
+Automatizar tarefas com AWS CLI
+Balanceadores de carga Explorar
 👩‍💻 Autora
-
 Maria Correia
 
 🎓 Estudante de Tecnologia da Informação - UNIVESP
 
 ☁️ AWS Cloud Practitioner (em formação)
 
-💻 Java | Spring Boot | Banco de Dados | AWS
+💻Java | Bota Primavera | Banco de Dados | AWS
 
+🔗 GitHub: https://github.com/MariaaPcsa
+
+📜 Licença
+Projeto desenvolvido para fins educacionais durante o Bootcamp AWS da DIO.
