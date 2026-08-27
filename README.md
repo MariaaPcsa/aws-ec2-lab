@@ -1,4 +1,4 @@
-☁️ AWS EC2 Lab - Gerenciamento de Instâncias Amazon EC2
+# ☁️ AWS EC2 Lab - Gerenciamento de Instâncias Amazon EC2
 AWS Nuvem DIO GitHub Status
 
 📖 Descrição
@@ -6,14 +6,14 @@ Este repositório foi desenvolvido como parte do desafio prático da DIO (Digita
 
 O laboratório ajudou na criação, configuração, monitoramento e gerenciamento de uma instância EC2, além da utilização de recursos como Security Groups, EBS e CloudWatch.
 
-🎯 Objetivos de Aprendizagem
+# Objetivos de Aprendizagem
 Aplicar conceitos de computação em nuvem.
 Criar e gerenciar instâncias EC2.
 Configure regras de acesso utilizando grupos de segurança.
 Uso de armazenamento persistente com Amazon EBS.
 Monitore recursos por meio do Amazon CloudWatch.
 Documentar processos técnicos utilizando GitHub.
-🏗️ Arquitetura do Laboratório
+# Arquitetura do Laboratório
 
 ☁️ Serviços AWS Utilizados
 se	Descrição
@@ -22,7 +22,7 @@ Amazon EBS	†A
 AWS IAM	Gerenciamento de usuários e permissões
 CloudWatch	Monitoramento e metodologia
 Grupos de segurança	Controle de acesso à instância
-🚀 Etapas Realizadas
+# Etapas Realizadas
 1️⃣ Criação da Instância EC2
 Configurações utilizadas:
 
@@ -113,7 +113,7 @@ Grupos de Segurança são fundamentais para a segurança da infraestrutura.
 O CloudWatch permite monitoramento detalhado dos recursos.
 O armazenamento EBS garante persistência dos dados.
 A documentação facilita futuras implementações e consultas.
-🛠️ Tecnologias Utilizadas
+# Tecnologias Utilizadas
 Amazon EC2
 Amazon EBS
 AWS IAM
@@ -121,7 +121,7 @@ Amazon CloudWatch
 Git
 GitHub
 Markdown
-📈 Próximos Passos
+# Próximos Passos
 IP Elástico
 Dimensionamento automático do Utilizar
 Integrar com Amazon S3
@@ -130,7 +130,7 @@ Balanceadores de carga Explorar
 👩‍💻 Autora
 Maria Correia
 
-🎓 Estudante de Tecnologia da Informação - UNIVESP
+🎓 Formada emTecnologia da Informação - UNIVESP
 
 ☁️ AWS Cloud Practitioner (em formação)
 
